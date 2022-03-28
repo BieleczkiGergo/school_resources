@@ -37,16 +37,19 @@ function constants(){
     cList.pop();
     document.getElementById("constremoved").innerHTML += cList;
     {
-        const PI = "value of num changed";
+        const PI = 87;
         //When used inside different block,
         //variable can be redeclared
         document.getElementById("constinside").innerHTML += PI;
         //Could be used in hacking
         //Doesn't even give error
+        document.getElementById("constfunction").innerHTML += constTest(3);
+        //But it goes only for that scope
+        //You cannot use this in other functions, so it's not that useful
     }
 
 }
 
-function constTest(){
-    
+function constTest(radius){
+    return radius*2*PI;
 }
