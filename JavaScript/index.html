@@ -13,8 +13,8 @@
     <section>
         <h1>Basic innerhtml change</h1>
         <p id="basic">Something</p>
-        <button type="button" onclick="function1()">Change content</button>
-        <button type="button" onclick="function2()">Change font</button>
+        <button type="button" onclick="function1()" class="work">Change content</button>
+        <button type="button" onclick="function2()" class="work">Change font</button>
         <hr class="sEnd">
 
         <h1>Inside scipt tests</h1>
@@ -29,19 +29,23 @@
         <p id="inblock"></p>
         <p>Content outside the block:</p>
         <p id="outblock"></p>
-        <button onclick="blockTest()">Make it work</button>
+        <button onclick="blockTest()" class="work">Make it work</button>
         <hr class="sEnd">
 
         <h1>Const tests</h1>
         <p id="constPI">Constant value: </p>
-        <button id="const" onclick="constants()">Make it work</button>
+        <button id="const" onclick="constants()" class="work">Make it work</button>
         <p id="constbase">Constant list: </p>
         <p id="constchanged">Changed list: </p>
         <p id="constappended">Append to constant list: </p>
         <p id="constremoved">Remove element from constant list: </p>
         <p id="constinside">Redeclare const inside another scope: </p>
         <p id="constfunction">Using a function with redeclared const: </p>
-        
+        <hr class="sEnd">
+
+        <h1>Function tests</h1>
+        <button id="functions" class="work">Make it work</button>
+        <p id="functions-rec"></p>
     </section>
     
 </body>

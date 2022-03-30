@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Ganf-of-three';
+    src: url('go3v2.ttf') format('truetype');
+}
+
+
 *{
     font-family: monospace;
     font-size: 120%;
@@ -39,5 +45,28 @@ h1{
 
 hr.sEnd{
     width: 80%;
+
+}
+
+.work{
+    width: 20%;
+    height:10%;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    background-color: #0099ff;
+    padding: 20px;
+    /*font-variant: small-caps;*/
+    border-bottom: solid 5px #0000ff;
+    position: relative;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-family: 'Gang-of-three', monospace;
+
+}
+
+.work:hover{
+    height: 120%;
+    width: 25%;
 
 }
