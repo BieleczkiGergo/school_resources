@@ -7,7 +7,7 @@ function function1 (){
 }
 
 function function2 (){
-    document.getElementById('basic').style.fontFamily = "verdana";
+    document.getElementById('basic').style.fontFamily = "gang-of-three";
 
 }
 

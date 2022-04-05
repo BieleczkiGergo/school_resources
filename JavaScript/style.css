@@ -1,8 +1,7 @@
 @font-face {
-    font-family: 'Ganf-of-three';
-    src: url('go3v2.ttf') format('truetype');
+    font-family: 'gang-of-three';
+    src: url('./go3v2.ttf') format('truetype');
 }
-
 
 *{
     font-family: monospace;
@@ -61,7 +60,7 @@ hr.sEnd{
     position: relative;
     transition-duration: 0.5s;
     cursor: pointer;
-    font-family: 'Gang-of-three', monospace;
+    font-family: 'gang-of-three', monospace;
 
 }
 
