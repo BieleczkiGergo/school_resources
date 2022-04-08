@@ -1,5 +1,4 @@
-#Python program to establish connection between
-#two computers
+#Python program to establish connection between two computers
 #Server side
 
 import socket
