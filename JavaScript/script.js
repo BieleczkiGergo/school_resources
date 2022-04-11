@@ -1,17 +1,22 @@
 const PI = 3.1415926535;
+const person = {
+    firstName = "John",
+    lastName = "Doe",
+    age = 69,
+    fullname = function(){return this.firstName + " " + this.lastName}
+}
 
-
-function function1 (){
+function function1 () {
     document.getElementById('basic').innerHTML = "Content changed";
 
 }
 
-function function2 (){
+function function2 () {
     document.getElementById('basic').style.fontFamily = "gang-of-three";
 
 }
 
-function blockTest(){
+function blockTest() {
     let num1 = 2;
     var num2 = 4;
     var inblock = document.getElementById("inblock");
@@ -26,7 +31,7 @@ function blockTest(){
     outblock.innerHTML = "" + num1 + ", " + num2;
 }
 
-function constants(){
+function constants() {
     document.getElementById("constPI").innerHTML += PI;
     const cList = ["Arch", "Fedora", "Ubuntu"];
     document.getElementById("constbase").innerHTML += cList;
@@ -50,6 +55,23 @@ function constants(){
 
 }
 
-function constTest(radius){
+function constTest(radius) {
     return radius*2*PI;
+}
+
+function fibonacci(n) {
+    if(n == 0 || n == 1){
+        return n;
+    }else return fibonacci(n-1)+fibonacci(n-2);
+}
+
+function functions(n) {
+    document.getElementById("functions-rec").innerHTML += fibonacci(n);
+}
+
+function objects_f() {
+    document.getElementById("objects-firstName").innerHTML += person.firstName;
+    document.getElementById("objects-lastName").innerHTML += person.lastName;
+    document.getElementById("objects-age").innerHTML += person.age;
+    document.getElementById("objects-fullname").innerHTML += person.fullname();
 }
