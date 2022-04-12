@@ -1,9 +1,11 @@
 const PI = 3.1415926535;
 const person = {
-    firstName = "John",
-    lastName = "Doe",
-    age = 69,
-    fullname = function(){return this.firstName + " " + this.lastName}
+    firstName : "John",
+    lastName : "Doe",
+    age : 69,
+    fullname : function() {
+        return this.firstName + " " + this.lastName;
+    }
 }
 
 function function1 () {
